@@ -1,0 +1,60 @@
+{
+  "name": "İstanbul Mobilite Veri Platformu",
+  "image": "ghcr.io/veri-muhendisligi-bootcamp/lab-ortami@sha256:ad422b3ac7009b300b2f5c8120cfcf05b481d7432021289e40f02cf360dd9df9",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb",
+    "storage": "32gb"
+  },
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "LAB_KOK": "${containerWorkspaceFolder}",
+    "SPARK_CONF_DIR": "${containerWorkspaceFolder}/.lab/spark",
+    "PYSPARK_PYTHON": "/opt/lab/venv/bin/python"
+  },
+  "remoteEnv": {
+    "PATH": "/opt/lab/venv/bin:/opt/lab/kafka/bin:/usr/lib/postgresql/17/bin:${containerEnv:PATH}"
+  },
+  "postCreateCommand": "bash lab/servis.sh ilk-kurulum",
+  "postStartCommand": "bash lab/servis.sh baslat",
+  "forwardPorts": [
+    8181,
+    4040
+  ],
+  "portsAttributes": {
+    "8181": {
+      "label": "Polaris REST kataloğu",
+      "onAutoForward": "silent"
+    },
+    "4040": {
+      "label": "Spark arayüzü",
+      "onAutoForward": "notify"
+    },
+    "8080": {
+      "label": "Airflow arayüzü",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/lab/venv/bin/python",
+        "python-envs.terminal.autoActivationType": "off",
+        "python.terminal.activateEnvironment": false,
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.exclude": {
+          "**/.lab": true
+        },
+        "editor.renderWhitespace": "boundary"
+      }
+    },
+    "codespaces": {
+      "openFiles": [
+        "README.md"
+      ]
+    }
+  }
+}

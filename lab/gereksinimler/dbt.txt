@@ -1,0 +1,8 @@
+dbt==2.0.11
+    # via -r dbt.in
+mashumaro==3.23
+    # via dbt
+msgpack==1.2.4
+    # via mashumaro
+typing-extensions==4.16.0
+    # via mashumaro

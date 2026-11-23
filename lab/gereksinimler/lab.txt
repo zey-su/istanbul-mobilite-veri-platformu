@@ -1,0 +1,152 @@
+annotated-types==0.8.0
+    # via pydantic
+anyio==4.16.0
+    # via httpx2
+attrs==26.1.0
+    # via openlineage-python
+cachetools==8.0.0
+    # via pyiceberg
+certifi==2026.10.23
+    # via requests
+chardet==7.7.0
+    # via
+    #   diff-cover
+    #   sqlfluff
+charset-normalizer==3.5.2
+    # via requests
+click==8.5.1
+    # via
+    #   pyiceberg
+    #   sqlfluff
+colorama==0.4.6
+    # via sqlfluff
+confluent-kafka==2.16.1
+    # via -r lab.in
+diff-cover==11.0.2
+    # via sqlfluff
+duckdb==2.0.0
+    # via -r lab.in
+faker==40.54.0
+    # via -r lab.in
+fsspec==2026.9.0
+    # via pyiceberg
+h11==0.16.0
+    # via httpcore2
+httpcore2==2.16.0
+    # via httpx2
+httpx2==2.16.0
+    # via openlineage-python
+idna==3.20
+    # via
+    #   anyio
+    #   httpx2
+    #   requests
+iniconfig==2.3.1
+    # via pytest
+jinja2==3.1.6
+    # via
+    #   diff-cover
+    #   sqlfluff
+markdown-it-py==4.3.0
+    # via rich
+markupsafe==3.0.4
+    # via jinja2
+mdurl==0.1.2
+    # via markdown-it-py
+mmh3==5.3.1
+    # via pyiceberg
+numpy==2.5.4
+    # via pandas
+openlineage-python==1.55.0
+    # via -r lab.in
+packaging==26.3
+    # via
+    #   openlineage-python
+    #   pytest
+pandas==3.1.1
+    # via -r lab.in
+pathspec==1.1.1
+    # via sqlfluff
+platformdirs==4.14.5
+    # via sqlfluff
+pluggy==1.7.0
+    # via
+    #   diff-cover
+    #   pytest
+polars==2.1.0
+    # via -r lab.in
+polars-runtime-32==2.1.0
+    # via polars
+py4j==0.10.9.9
+    # via pyspark
+pyarrow==26.0.1
+    # via
+    #   -r lab.in
+    #   pyiceberg
+pydantic==2.14.3
+    # via pyiceberg
+pydantic-core==2.50.4
+    # via pydantic
+pygments==2.21.0
+    # via
+    #   diff-cover
+    #   pytest
+    #   rich
+pyiceberg==0.12.0
+    # via -r lab.in
+pyparsing==3.3.3
+    # via pyiceberg
+pyroaring==1.2.0
+    # via pyiceberg
+pyspark==4.1.4
+    # via -r lab.in
+pytest==9.2.0
+    # via -r lab.in
+python-dateutil==4.0.0
+    # via
+    #   openlineage-python
+    #   pandas
+    #   strictyaml
+pyyaml==6.0.3
+    # via
+    #   openlineage-python
+    #   sqlfluff
+regex==2026.11.9
+    # via sqlfluff
+requests==2.34.2
+    # via
+    #   -r lab.in
+    #   openlineage-python
+    #   pyiceberg
+rich==15.0.0
+    # via pyiceberg
+ruff==0.17.5
+    # via -r lab.in
+sqlfluff==4.5.0
+    # via -r lab.in
+strictyaml==1.7.3
+    # via pyiceberg
+tblib==3.2.2
+    # via sqlfluff
+tenacity==9.2.1
+    # via pyiceberg
+tqdm==4.70.1
+    # via sqlfluff
+truststore==0.10.5
+    # via
+    #   httpcore2
+    #   httpx2
+typing-extensions==4.16.0
+    # via
+    #   anyio
+    #   pydantic
+    #   pydantic-core
+    #   typing-inspection
+typing-inspection==0.4.5
+    # via pydantic
+tzdata==2026.6
+    # via python-dateutil
+urllib3==2.8.0
+    # via requests
+zstandard==0.25.0
+    # via pyiceberg

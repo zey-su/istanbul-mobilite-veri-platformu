@@ -1,0 +1,26 @@
+# Lab durumu, kimlik bilgileri ve servis verileri
+.lab/
+
+# İndirilen veri ve Iceberg tablolarının dosyaları
+veri/*
+!veri/OKU-BENI.md
+lakehouse/
+
+# Python ve araç önbellekleri
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+spark-warehouse/
+metastore_db/
+derby.log
+
+# dbt çıktıları
+target/
+dbt_packages/
+logs/
+# yalnızca CI'da oluşan veri hazırlama çıktıları
+veri_hazir/
+veri_ham/
+lab/veri_profili.json
+veri_ham_girdi/
